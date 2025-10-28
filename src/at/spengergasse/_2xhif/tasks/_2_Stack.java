@@ -3,9 +3,6 @@ package at.spengergasse._2xhif.tasks;
 import at.spengergasse._2xhif.domain.POI;
 import at.spengergasse._2xhif.foundation.TourNavigator;
 
-/**
- *
- */
 public class _2_Stack {
     public static void main(String[] args) {
         final TourNavigator tourNavigator = new TourNavigator();

@@ -5,12 +5,12 @@ import at.spengergasse._2xhif.domain.POI;
 
 public class _3_List {
     public static void main(final String[] args) {
-        POI poi1 = new POI(1L, "Mona Lisa", "Porträtgemälde von Lisa del Giocondo, Öl auf Pappelholz.", 1503);
-        POI poi2 = new POI(2L, "Girl with a Pierced Eardrum", "Banksys Hommage an Vermeer, mit modernem Twist.", 2014);
-        POI poi3 = new POI(3L, "At Eternity’s Gate", "Eines der späten Werke van Goghs, das menschliches Leiden ausdrückt.", 1890);
-        POI poi4 = new POI(4L, "Die zwei Fridas", "Ein surrealistisches Doppel-Selbstporträt von Kahlo.", 1939);
+        final POI poi1 = new POI(1L, "Mona Lisa", "Porträtgemälde von Lisa del Giocondo, Öl auf Pappelholz.", 1503);
+        final POI poi2 = new POI(2L, "Girl with a Pierced Eardrum", "Banksys Hommage an Vermeer, mit modernem Twist.", 2014);
+        final  POI poi3 = new POI(3L, "At Eternity’s Gate", "Eines der späten Werke van Goghs, das menschliches Leiden ausdrückt.", 1890);
+        final POI poi4 = new POI(4L, "Die zwei Fridas", "Ein surrealistisches Doppel-Selbstporträt von Kahlo.", 1939);
 
-        Exhibition exhibitionA = new Exhibition();
+        final Exhibition exhibitionA = new Exhibition();
         exhibitionA.addPOI(poi1);
         exhibitionA.addPOI(poi2);
         exhibitionA.addPOI(poi3);
@@ -18,7 +18,7 @@ public class _3_List {
         System.out.println("Exhibition A: ");
         exhibitionA.print();
 
-        Exhibition exhibitionB = new Exhibition();
+        final Exhibition exhibitionB = new Exhibition();
         exhibitionB.addPOI(poi2);
         exhibitionB.addPOI(poi3);
         exhibitionB.addPOI(poi4);

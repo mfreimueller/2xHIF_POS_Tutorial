@@ -16,7 +16,7 @@ public class _4_Queue {
         final POI poi8 = new POI(4L, "Die zwei Fridas", "Ein surrealistisches Doppel-Selbstporträt von Kahlo.", 1939);
 
         // -- history tour --
-        HistoryTour historyTour = new HistoryTour();
+        final HistoryTour historyTour = new HistoryTour();
         historyTour.addPOI(poi1);
         historyTour.addPOI(poi3);
         historyTour.addPOI(poi5);
@@ -36,7 +36,7 @@ public class _4_Queue {
         historyTour.print();
 
         // -- random tour --
-        RandomTour randomTour = new RandomTour();
+        final RandomTour randomTour = new RandomTour();
         randomTour.addPOI(poi2);
         randomTour.addPOI(poi4);
         randomTour.addPOI(poi6);

@@ -8,7 +8,7 @@ import at.spengergasse._2xhif.domain.POI;
  * previous POIs (similar to the browser functionality).
  */
 public class TourNavigator {
-    private Stack stack;
+    private ListStack stack;
 
     public TourNavigator() {
         // TODO: create a new stack

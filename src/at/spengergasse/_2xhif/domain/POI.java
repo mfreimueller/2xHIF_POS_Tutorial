@@ -1,5 +1,7 @@
 package at.spengergasse._2xhif.domain;
 
+import at.spengergasse._2xhif.foundation.exception.DataViolationException;
+
 public class POI {
     private final Long id;
     private String title;
@@ -33,11 +35,23 @@ public class POI {
         return year;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(String title) throws DataViolationException {
+        if (title == null) {
+            throw new DataViolationException("title must not be null!");
+        } else if (title.isBlank()) {
+            throw new DataViolationException("title must not be empty or blank!");
+        }
+
         this.title = title;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(String description) throws DataViolationException {
+        if (description == null) {
+            throw new DataViolationException("description must not be null!");
+        } else if (description.isBlank()) {
+            throw new DataViolationException("description must not be empty or blank!");
+        }
+
         this.description = description;
     }
 

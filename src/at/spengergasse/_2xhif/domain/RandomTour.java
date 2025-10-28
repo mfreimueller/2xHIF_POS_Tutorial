@@ -3,7 +3,7 @@ package at.spengergasse._2xhif.domain;
 /**
  * A tour implementation that allows visitors to either visit the oldest or the youngest
  * POI from this tour.
- * Uses a double linked queue to implement this feature.
+ * Uses a double linked list to implement this feature.
  */
 public class RandomTour implements Tour {
 

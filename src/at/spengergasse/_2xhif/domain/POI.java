@@ -14,6 +14,7 @@ public class POI {
         this.id = id;
         this.title = title;
         this.description = description;
+        this.year = year;
     }
 
     public Long getId() {

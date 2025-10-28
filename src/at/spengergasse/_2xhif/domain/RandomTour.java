@@ -1,0 +1,43 @@
+package at.spengergasse._2xhif.domain;
+
+/**
+ * A tour implementation that allows visitors to either visit the oldest or the youngest
+ * POI from this tour.
+ * Uses a double linked queue to implement this feature.
+ */
+public class RandomTour implements Tour {
+
+    @Override
+    public void addPOI(POI poi) {
+    }
+
+    /**
+     * @return The currently oldest POI of this tour.
+     */
+    @Override
+    public POI getCurrent() {
+        return null;
+    }
+
+    /**
+     * Visits the next oldest POI of this tour and returns the currently oldest.
+     * @return The oldest POI.
+     */
+    @Override
+    public POI visitNext() {
+        return null;
+    }
+
+    /**
+     * Visits the next youngest POI of this tour.
+     * @return The youngest POI.
+     */
+    public POI visitYoungest() {
+        return null;
+    }
+
+    @Override
+    public void print() {
+
+    }
+}

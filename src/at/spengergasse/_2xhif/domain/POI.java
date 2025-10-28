@@ -44,4 +44,15 @@ public class POI {
     public void setYear(int year) {
         this.year = year;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        // <id> title (year)
+        sb.append('<').append(id).append("> ");
+        sb.append(title).append(" (");
+        sb.append(year).append(')');
+
+        return sb.toString();
+    }
 }

@@ -4,7 +4,7 @@ import at.spengergasse._2xhif.domain.POI;
 
 public class _1_Exception {
     public static void main(String[] args) {
-        POI poi = new POI(1L);
+        final POI poi = new POI(1L);
 
         // TODO: create a new exception called DataViolationException in at.spengergasse.2xhif.foundation
 

@@ -4,7 +4,7 @@ import at.spengergasse._2xhif.domain.HistoryTour;
 import at.spengergasse._2xhif.domain.POI;
 import at.spengergasse._2xhif.domain.RandomTour;
 
-public class _4_Queue {
+public class _4_LinkedList {
     public static void main(String[] args) {
         final POI poi1 = new POI(1L, "Balloon Girl", "Stencil-Graffiti eines jungen Mädchens mit einem roten Herzballon.", 2002);
         final POI poi2 = new POI(2L, "Die Nachtwache", "Ein großes Ölgemälde von Rembrandt van Rijn.", 1642);

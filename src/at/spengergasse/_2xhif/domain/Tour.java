@@ -27,4 +27,9 @@ public interface Tour {
      */
     void print();
 
+    /**
+     * @return The number of elements in this tour.
+     */
+    int count();
+
 }

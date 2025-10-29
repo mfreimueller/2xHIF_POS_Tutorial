@@ -51,4 +51,12 @@ public class RandomTour implements Tour {
     public void print() {
 
     }
+
+    /**
+     * @return The number of elements in this tour.
+     */
+    @Override
+    public int count() {
+        return 0;
+    }
 }

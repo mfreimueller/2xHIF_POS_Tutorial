@@ -1,6 +1,6 @@
 package at.spengergasse._2xhif.foundation.exception;
 
-public class EmptyTourException extends Exception {
+public class EmptyTourException extends RuntimeException {
     public EmptyTourException(String message) {
         super(message);
     }

@@ -9,13 +9,15 @@ public class Exhibition {
     // TODO: we need a list that stores the POIs of this exhibition
 
     public Exhibition() {
+        // TODO: initialize the list here
+        this.elements = new ArrayList<>();
     }
 
     /**
      * Adds a new POI to the exhibition. If the POI is already part of this exhibition,
      * a DuplicatedPOIException must be thrown.
      *
-     * @param poi The POI that should be added to the exhibition.
+     * @param poi The POI that should be added to the exhibition. Must not be null!
      */
     public void addPOI(POI poi) {
     }
@@ -53,6 +55,37 @@ public class Exhibition {
      * @return A list of all POIs that are also part of the other exhibition.
      */
     public Object intersect(Exhibition exhibition) {
+    // FIXME: replace Object with the correct response type!
+    public ArrayList<POI> intersect(Exhibition exhibition) {
+        ArrayList<POI> intersectingElements = new ArrayList<>();
+
+        for (final POI poi : elements) {
+            // we need to figure out whether the poi is part of exhibition too, or not
+            // if poi is a part of the other exhibition, add it to intersecting elements
+
+            // not so beautiful:
+            /*for (final POI p : exhibition.elements) {
+                if (poi == p) {
+                    intersectingElements.add(poi);
+                }
+            }*/
+
+            if (exhibition.findPOI(poi.getId()) != null) {
+                intersectingElements.add(poi);
+            }
+        }
+
+        return intersectingElements;
+    }
+
+    /**
+     * Returns the difference between this exhibition and
+     * another one, that is, all POIs that are part of this
+     * exhibition but not of the other.
+     * @param exhibition Another exhibition to calculate the difference from.
+     * @return A list of all POIs that are part of this exhibition but not of the other.
+     */
+    public Object difference(Exhibition exhibition) { // FIXME: replace Object with correct response type!
         return null;
     }
 

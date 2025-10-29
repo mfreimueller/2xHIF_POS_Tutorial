@@ -2,7 +2,6 @@ package at.spengergasse._2xhif.tasks;
 
 import at.spengergasse._2xhif.domain.Exhibition;
 import at.spengergasse._2xhif.domain.POI;
-import at.spengergasse._2xhif.foundation.exception.DuplicatedPOIException;
 
 import java.util.ArrayList;
 
@@ -21,7 +20,7 @@ public class _3_List {
         try {
             exhibitionA.addPOI(poi1);
             throw new IllegalStateException("This should not happen... you shouldn't be able to add a POI twice.");
-        } catch (DuplicatedPOIException e) {
+        } catch (Exception e) {
             System.out.println("Correctly prevented adding a POI twice!");
         }
 

@@ -10,7 +10,6 @@ public class Exhibition {
 
     public Exhibition() {
         // TODO: initialize the list here
-        this.elements = new ArrayList<>();
     }
 
     /**
@@ -25,6 +24,7 @@ public class Exhibition {
     /**
      * Removes a POI from the exhibition, identified by its unique ID. If no such POI
      * was part of this exhibition, false is returned.
+     *
      * @param id The unique ID of the POI to remove.
      * @return False if no such POI was found.
      */
@@ -34,6 +34,7 @@ public class Exhibition {
 
     /**
      * Searches for a POI identified by its unique ID and returns it.
+     *
      * @param id The unique ID of the POI to find.
      * @return The POI identified by the ID or null if not found.
      */
@@ -51,37 +52,20 @@ public class Exhibition {
     /**
      * Returns a list of all POIs of this exhibition that intersect with the POIs of another exhibition.
      * Think of an inner join in SQL. We want the intersecting elements.
+     *
      * @param exhibition Another exhibition that we want to intersect.
      * @return A list of all POIs that are also part of the other exhibition.
      */
     public Object intersect(Exhibition exhibition) {
-    // FIXME: replace Object with the correct response type!
-    public ArrayList<POI> intersect(Exhibition exhibition) {
-        ArrayList<POI> intersectingElements = new ArrayList<>();
-
-        for (final POI poi : elements) {
-            // we need to figure out whether the poi is part of exhibition too, or not
-            // if poi is a part of the other exhibition, add it to intersecting elements
-
-            // not so beautiful:
-            /*for (final POI p : exhibition.elements) {
-                if (poi == p) {
-                    intersectingElements.add(poi);
-                }
-            }*/
-
-            if (exhibition.findPOI(poi.getId()) != null) {
-                intersectingElements.add(poi);
-            }
-        }
-
-        return intersectingElements;
+        // FIXME: replace Object with the correct response type!
+        return null;
     }
 
     /**
      * Returns the difference between this exhibition and
      * another one, that is, all POIs that are part of this
      * exhibition but not of the other.
+     *
      * @param exhibition Another exhibition to calculate the difference from.
      * @return A list of all POIs that are part of this exhibition but not of the other.
      */

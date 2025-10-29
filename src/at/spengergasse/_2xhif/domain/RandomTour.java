@@ -7,6 +7,14 @@ package at.spengergasse._2xhif.domain;
  */
 public class RandomTour implements Tour {
 
+    // TODO: implement double linked list here!
+
+    /**
+     * Adds a new POI to the tour. If the POI is already part of the Tour, a DuplicatedEntryException
+     * is to be thrown. The POI is inserted into the tour correctly by sorting it using getYear().
+     *
+     * @param poi A POI to add to the tour.
+     */
     @Override
     public void addPOI(POI poi) {
     }
@@ -36,6 +44,9 @@ public class RandomTour implements Tour {
         return null;
     }
 
+    /**
+     * Prints the current state of the tour to stdout.
+     */
     @Override
     public void print() {
 

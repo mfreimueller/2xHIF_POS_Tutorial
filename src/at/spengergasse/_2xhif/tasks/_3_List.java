@@ -3,6 +3,8 @@ package at.spengergasse._2xhif.tasks;
 import at.spengergasse._2xhif.domain.Exhibition;
 import at.spengergasse._2xhif.domain.POI;
 
+import java.util.ArrayList;
+
 public class _3_List {
     public static void main(final String[] args) {
         final POI poi1 = new POI(1L, "Mona Lisa", "Porträtgemälde von Lisa del Giocondo, Öl auf Pappelholz.", 1503);
@@ -27,7 +29,7 @@ public class _3_List {
         exhibitionB.print();
 
         POI poiWithId2 = exhibitionA.findPOI(2L);
-        System.out.println("POI with ID 2: " + poiWithId2);
+        System.out.println("\nPOI with ID 2: " + poiWithId2);
 
         boolean removed = exhibitionA.removePOI(1L);
         System.out.println("Successfully removed POI with ID 1 (expected true): " + removed);
@@ -36,20 +38,20 @@ public class _3_List {
         System.out.println("#POIs in exhibition B: " + exhibitionB.getCount());
 
         System.out.println("\nIntersecting exhibition A and B:");
-        /* ArrayList<POI> common = exhibitionA.intersect(exhibitionB);
+        ArrayList<POI> common = (ArrayList<POI>)exhibitionA.intersect(exhibitionB);
          for (POI poi : common) {
             System.out.println("- " + poi.getTitle());
-        }*/
+        }
 
         boolean removed99 = exhibitionA.removePOI(99L);
-        System.out.println("Successfully removed POI with ID 99 (expected false): " + removed99);
+        System.out.println("\nSuccessfully removed POI with ID 99 (expected false): " + removed99);
 
         exhibitionA.addPOI(poi4);
 
         System.out.println("\nNew intersect (A ∩ B):");
-        /*ArrayList<POI> newCommon = exhibitionA.intersect(exhibitionB);
+        ArrayList<POI> newCommon = (ArrayList<POI>)exhibitionA.intersect(exhibitionB);
         for (POI poi : newCommon) {
             System.out.println("- " + poi.getTitle());
-        }*/
+        }
     }
 }

@@ -10,10 +10,10 @@ public class _4_LinkedList {
         final POI poi2 = new POI(2L, "Die Nachtwache", "Ein großes Ölgemälde von Rembrandt van Rijn.", 1642);
         final POI poi3 = new POI(3L, "Self-Portrait with Cropped Hair", "Ein Selbstporträt Kahlos nach der Trennung von Rivera.", 1940);
         final POI poi4 = new POI(4L, "Die Beständigkeit der Erinnerung", "Berühmtes surrealistisches Werk mit schmelzenden Uhren.", 1931);
-        final POI poi5 = new POI(1L, "Mona Lisa", "Porträtgemälde von Lisa del Giocondo, Öl auf Pappelholz.", 1503);
-        final POI poi6 = new POI(2L, "Girl with a Pierced Eardrum", "Banksys Hommage an Vermeer, mit modernem Twist.", 2014);
-        final POI poi7 = new POI(3L, "At Eternity’s Gate", "Eines der späten Werke van Goghs, das menschliches Leiden ausdrückt.", 1890);
-        final POI poi8 = new POI(4L, "Die zwei Fridas", "Ein surrealistisches Doppel-Selbstporträt von Kahlo.", 1939);
+        final POI poi5 = new POI(5L, "Mona Lisa", "Porträtgemälde von Lisa del Giocondo, Öl auf Pappelholz.", 1503);
+        final POI poi6 = new POI(6L, "Girl with a Pierced Eardrum", "Banksys Hommage an Vermeer, mit modernem Twist.", 2014);
+        final POI poi7 = new POI(7L, "At Eternity’s Gate", "Eines der späten Werke van Goghs, das menschliches Leiden ausdrückt.", 1890);
+        final POI poi8 = new POI(8L, "Die zwei Fridas", "Ein surrealistisches Doppel-Selbstporträt von Kahlo.", 1939);
 
         // -- history tour --
         final HistoryTour historyTour = new HistoryTour();

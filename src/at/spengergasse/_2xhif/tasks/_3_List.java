@@ -2,6 +2,7 @@ package at.spengergasse._2xhif.tasks;
 
 import at.spengergasse._2xhif.domain.Exhibition;
 import at.spengergasse._2xhif.domain.POI;
+import at.spengergasse._2xhif.foundation.exception.DuplicatedPOIException;
 
 import java.util.ArrayList;
 
@@ -16,6 +17,13 @@ public class _3_List {
         exhibitionA.addPOI(poi1);
         exhibitionA.addPOI(poi2);
         exhibitionA.addPOI(poi3);
+
+        try {
+            exhibitionA.addPOI(poi1);
+            throw new IllegalStateException("This should not happen... you shouldn't be able to add a POI twice.");
+        } catch (DuplicatedPOIException e) {
+            System.out.println("Correctly prevented adding a POI twice!");
+        }
 
         System.out.println("Exhibition A: ");
         exhibitionA.print();
@@ -40,6 +48,12 @@ public class _3_List {
         System.out.println("\nIntersecting exhibition A and B:");
         ArrayList<POI> common = (ArrayList<POI>)exhibitionA.intersect(exhibitionB);
          for (POI poi : common) {
+            System.out.println("- " + poi.getTitle());
+        }
+
+        System.out.println("\nDifference between exhibition B and A:");
+        ArrayList<POI> diff = (ArrayList<POI>)exhibitionB.difference(exhibitionA);
+        for (POI poi : diff) {
             System.out.println("- " + poi.getTitle());
         }
 

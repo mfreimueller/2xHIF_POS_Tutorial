@@ -78,8 +78,8 @@ public class HistoryTour implements Tour {
     }
 
     /**
-     * Visits the next POI and returns the current one, which is removed from the stack.
-     * Throws an EmptyTourException if the tour has no next POI.
+     * Visits the next POI and returns the current one, which is removed from the tour.
+     * Throws an EmptyTourException if the tour is empty.
      *
      * @return The POI that is currently being visited.
      */

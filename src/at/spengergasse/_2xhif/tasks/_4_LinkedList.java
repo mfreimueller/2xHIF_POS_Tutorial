@@ -22,7 +22,13 @@ public class _4_LinkedList {
         historyTour.addPOI(poi5);
         historyTour.addPOI(poi7);
 
-        historyTour.addPOI(poi1); // FIXME: should throw an exception
+        try {
+            historyTour.addPOI(poi1); // FIXME: should throw an exception
+            throw new IllegalStateException("This shouldn't happen!");
+        } catch (Exception e) {
+            System.out.println("Correctly threw exception on trying to add duplicated POI.");
+        }
+
         System.out.println("Current history tour POI: " + historyTour.getCurrent());
 
         historyTour.visitNext();
@@ -42,7 +48,13 @@ public class _4_LinkedList {
         randomTour.addPOI(poi6);
         randomTour.addPOI(poi8);
 
-        randomTour.addPOI(poi1); // FIXME: should throw an exception
+        try {
+            randomTour.addPOI(poi1); // FIXME: should throw an exception
+            throw new IllegalStateException("This shouldn't happen!");
+        } catch (Exception e) {
+            System.out.println("Correctly threw exception on trying to add duplicated POI.");
+        }
+
         System.out.println("Current random tour POI: " + randomTour.getCurrent());
 
         randomTour.visitNext();

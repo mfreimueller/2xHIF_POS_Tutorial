@@ -23,6 +23,10 @@ public class HistoryTour implements Tour {
      */
     @Override
     public void addPOI(POI poi) {
+        if (poi == null) {
+            throw new IllegalArgumentException("poi must no be null!");
+        }
+
         // is the poi already part of this tour? - if yes: throw exception
         if (contains(poi)) {
             throw new DuplicatedEntryException(poi.getId());
@@ -43,6 +47,12 @@ public class HistoryTour implements Tour {
 
             return;
         }
+
+        // same logic as below using arrays:
+        // array: [1530; 1701; 1723] - too small, need to regrow and reinsert all elements
+        // new array: [null; null; null; null]
+        // before insert: [1530; 1701; 1723; null]
+        // after insert: [1530; 1701; 1712; 1723]
 
         // example: add 1712
         // given: 1530 -> 1701 -> 1723 -> ...

@@ -49,7 +49,7 @@ public class _4_LinkedList {
         randomTour.addPOI(poi8);
 
         try {
-            randomTour.addPOI(poi1); // FIXME: should throw an exception
+            randomTour.addPOI(poi2); // FIXME: should throw an exception
             throw new IllegalStateException("This shouldn't happen!");
         } catch (Exception e) {
             System.out.println("Correctly threw exception on trying to add duplicated POI.");
@@ -66,7 +66,7 @@ public class _4_LinkedList {
         randomTour.print();
 
         System.out.println("\nRandom tour after insert: ");
-        randomTour.addPOI(poi4); // TODO: should insert the POI properly
+        randomTour.addPOI(poi5); // TODO: should insert the POI properly
         randomTour.print();
     }
 }

@@ -24,7 +24,7 @@ public class Student {
         {
             // lokale Variable - existieren nur in diesem Methoden-Scope
             // nextStudentNumber existiert nur innerhalb dieser Klammern ({})
-            int nextStudentNumber = ++Student.studentNumberCounter;
+            int nextStudentNumber = Student.studentNumberCounter++;
             studentNumber = lastname.substring(0, 3) + nextStudentNumber;
         }
     }
@@ -54,7 +54,7 @@ public class Student {
         return studentNumber + ": " + firstname + " " + lastname + " " + birthDay;
     }
 
-    static void main() {
+    public static void main(String[] args) {
         var studentA = new Student("Max", "Mustermann", ZonedDateTime.of(2010, 5, 23, 0, 0, 0, 0, ZoneId.systemDefault()));
         var studentB = new Student("Maxi", "Musterfrau", ZonedDateTime.of(2008, 8, 3, 0, 0, 0, 0, ZoneId.systemDefault()));
 

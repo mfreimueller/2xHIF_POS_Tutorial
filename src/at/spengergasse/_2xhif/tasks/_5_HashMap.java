@@ -38,7 +38,7 @@ public class _5_HashMap {
         }
 
         final boolean couldRemove = cache.removeById(3L);
-        if (couldRemove) {
+        if (!couldRemove) {
             System.err.println("cache.removeById failed to remove the POI with ID 3.");
         } else {
             System.out.println("cache.removeById correctly removed the POI with ID 3.");

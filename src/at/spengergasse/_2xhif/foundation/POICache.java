@@ -41,7 +41,7 @@ public class POICache {
     }
 
     /**
-     * Should clear the cache and remove any stored POIs.
+     * Clears the cache and removes any stored POIs.
      */
     public void clear() {
 

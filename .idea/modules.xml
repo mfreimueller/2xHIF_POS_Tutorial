@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/2xHIF_Java.iml" filepath="$PROJECT_DIR$/2xHIF_Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bibliotheksverwaltung/Bibliotheksverwaltung.iml" filepath="$PROJECT_DIR$/Bibliotheksverwaltung/Bibliotheksverwaltung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fahrzeugverwaltung/Fahrzeugverwaltung.iml" filepath="$PROJECT_DIR$/Fahrzeugverwaltung/Fahrzeugverwaltung.iml" />
     </modules>
   </component>
 </project>

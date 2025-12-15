@@ -9,5 +9,8 @@
         <module name="Teaching" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SantaManagement" target="25" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArtApp.iml" filepath="$PROJECT_DIR$/ArtApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bibliotheksverwaltung/Bibliotheksverwaltung.iml" filepath="$PROJECT_DIR$/Bibliotheksverwaltung/Bibliotheksverwaltung.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fahrzeugverwaltung/Fahrzeugverwaltung.iml" filepath="$PROJECT_DIR$/Fahrzeugverwaltung/Fahrzeugverwaltung.iml" />
     </modules>

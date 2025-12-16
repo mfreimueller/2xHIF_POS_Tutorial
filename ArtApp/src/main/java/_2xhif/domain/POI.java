@@ -1,4 +1,4 @@
-package at.spengergasse._2xhif.domain;
+package _2xhif.domain;
 
 public class POI {
     private final Long id;

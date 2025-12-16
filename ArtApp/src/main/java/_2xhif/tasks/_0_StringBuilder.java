@@ -1,4 +1,4 @@
-package at.spengergasse._2xhif.tasks;
+package _2xhif.tasks;
 
 import at.spengergasse._2xhif.domain.POI;
 

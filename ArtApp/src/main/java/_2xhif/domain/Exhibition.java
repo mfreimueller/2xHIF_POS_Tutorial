@@ -1,4 +1,4 @@
-package at.spengergasse._2xhif.domain;
+package _2xhif.domain;
 
 /**
  * An exhibition is a collection of POIs that visitors can view. Typical examples are "Dauerausstellungen", i.e.

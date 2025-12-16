@@ -1,4 +1,4 @@
-package at.spengergasse._2xhif.domain;
+package _2xhif.domain;
 
 /**
  * Tour uses a linked lists to store a list of POIs that visitors are to visit.

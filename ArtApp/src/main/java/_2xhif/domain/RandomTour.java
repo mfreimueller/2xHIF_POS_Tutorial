@@ -1,4 +1,4 @@
-package at.spengergasse._2xhif.domain;
+package _2xhif.domain;
 
 /**
  * A tour implementation that allows visitors to either visit the oldest or the youngest

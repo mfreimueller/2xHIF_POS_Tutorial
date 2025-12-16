@@ -1,4 +1,4 @@
-package at.spengergasse._2xhif.foundation;
+package _2xhif.foundation;
 
 /**
  * A stack implementation using an internal list.

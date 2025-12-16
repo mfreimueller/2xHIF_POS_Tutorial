@@ -1,4 +1,4 @@
-package _2xhif.domain;
+package at.spengergasse._2xhif.domain;
 
 public interface Tour {
     /**

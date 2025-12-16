@@ -1,4 +1,4 @@
-package _2xhif.domain;
+package at.spengergasse._2xhif.domain;
 
 import at.spengergasse._2xhif.foundation.LinkedListNode;
 import at.spengergasse._2xhif.foundation.exception.DuplicatedEntryException;

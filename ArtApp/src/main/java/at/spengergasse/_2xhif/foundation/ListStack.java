@@ -1,4 +1,4 @@
-package _2xhif.foundation;
+package at.spengergasse._2xhif.foundation;
 
 import at.spengergasse._2xhif.foundation.exception.EmptyStackException;
 

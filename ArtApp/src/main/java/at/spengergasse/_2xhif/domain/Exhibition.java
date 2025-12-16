@@ -1,9 +1,8 @@
-package _2xhif.domain;
+package at.spengergasse._2xhif.domain;
 
 import at.spengergasse._2xhif.foundation.exception.DuplicatedPOIException;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**

@@ -1,4 +1,4 @@
-package _2xhif.tasks;
+package at.spengergasse._2xhif.tasks;
 
 import at.spengergasse._2xhif.domain.HistoryTour;
 import at.spengergasse._2xhif.domain.POI;

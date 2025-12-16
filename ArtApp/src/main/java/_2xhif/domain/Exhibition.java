@@ -1,4 +1,4 @@
-package at.spengergasse._2xhif.domain;
+package _2xhif.domain;
 
 import at.spengergasse._2xhif.foundation.exception.DuplicatedPOIException;
 

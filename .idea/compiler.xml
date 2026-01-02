@@ -11,6 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="2xHIF_Java" target="25" />
       <module name="BufferedReader" target="25" />
       <module name="SantaManagement" target="25" />
     </bytecodeTargetLevel>

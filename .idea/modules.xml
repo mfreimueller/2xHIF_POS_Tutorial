@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/ArtApp/ArtApp.iml" filepath="$PROJECT_DIR$/ArtApp/ArtApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bibliotheksverwaltung/Bibliotheksverwaltung.iml" filepath="$PROJECT_DIR$/Bibliotheksverwaltung/Bibliotheksverwaltung.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fahrzeugverwaltung/Fahrzeugverwaltung.iml" filepath="$PROJECT_DIR$/Fahrzeugverwaltung/Fahrzeugverwaltung.iml" />
-      <module fileurl="file://$PROJECT_DIR$/POS_Tutorial.iml" filepath="$PROJECT_DIR$/POS_Tutorial.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,56 @@
+1
+Mona Lisa
+Porträt einer Frau mit geheimnisvollem Lächeln
+1503
+2
+Das letzte Abendmahl
+Darstellung des letzten Abendmahls Jesu mit seinen Jüngern
+1498
+3
+Der Schrei
+Expressives Gemälde mit einer schreienden Figur
+1893
+4
+Sternennacht
+Nachthimmel mit wirbelnden Sternen über einem Dorf
+1889
+5
+Sonnenblumen
+Stillleben mit leuchtend gelben Sonnenblumen
+1889
+6
+Guernica
+Monumentales Antikriegsgemälde mit symbolischen Figuren
+1937
+7
+Die Beständigkeit der Erinnerung
+Surreales Bild mit schmelzenden Uhren
+1931
+8
+Das Mädchen mit dem Perlenohrring
+Porträt eines Mädchens mit exotischem Kopfschmuck
+1665
+9
+Die Geburt der Venus
+Darstellung der Göttin Venus auf einer Muschel
+1486
+10
+Der Kuss
+Goldverziertes Liebespaar in inniger Umarmung
+1908
+11
+Campbell’s Soup Cans
+Serie von Bildern mit Suppendosen als Alltagsobjekt
+1962
+12
+Les Demoiselles d’Avignon
+Kubistisches Gemälde mit fünf weiblichen Figuren
+1907
+13
+Freiheitsstatue Entwurf
+Früher künstlerischer Entwurf für ein Monument
+1886
+14
+Die Weizenkörner
+Abstrakte Darstellung von Wachstum und Natur
+1937

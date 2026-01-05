@@ -1,4 +1,4 @@
-package _2xhif.domain;
+package at.spengergasse._2xhif.domain.content;
 
 /**
  * An abstract base class for any content associated with POIs. A content may be an image, an audio file, a video,
@@ -32,6 +32,6 @@ public abstract class Content {
      * Presents the content element to the user. Based on the type of content, this includes playing an audio,
      * showing a video or simply presenting one or more images.
      */
-    abstract void present();
+    public abstract void present();
 
 }

@@ -25,7 +25,7 @@ public class Student {
             // lokale Variable - existieren nur in diesem Methoden-Scope
             // nextStudentNumber existiert nur innerhalb dieser Klammern ({})
             int nextStudentNumber = Student.studentNumberCounter++;
-            studentNumber = lastname.substring(0, 3) + nextStudentNumber;
+            studentNumber = lastname.substring(0, 3) + 1;//nextStudentNumber;
         }
     }
 
@@ -54,11 +54,32 @@ public class Student {
         return studentNumber + ": " + firstname + " " + lastname + " " + birthDay;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+//        if (obj instanceof Student other) {
+        if (obj instanceof Student) {
+            Student other = (Student) obj;
+
+            return studentNumber.equals(other.studentNumber);
+        } else {
+            return false;
+        }
+    }
+
     public static void main(String[] args) {
         var studentA = new Student("Max", "Mustermann", ZonedDateTime.of(2010, 5, 23, 0, 0, 0, 0, ZoneId.systemDefault()));
-        var studentB = new Student("Maxi", "Musterfrau", ZonedDateTime.of(2008, 8, 3, 0, 0, 0, 0, ZoneId.systemDefault()));
 
-        System.out.println(studentA);
-        System.out.println(studentB);
+        var date = ZonedDateTime.of(2008, 8, 3, 0, 0, 0, 0, ZoneId.systemDefault());
+        var studentB = new Student("Maxi", "Musterfrau", date);
+        Student studentC = new Student("Maxi", "Musterfrau", date);
+        Student studentD = studentC;
+
+        System.out.println(studentA.hashCode() + "");
+        System.out.println(studentB.hashCode() + "");
+        System.out.println(studentC.hashCode() + "");
+        System.out.println(studentD.hashCode() + "");
+
+        System.out.println(studentB == studentC);
+        System.out.println(studentB.equals(studentC));
     }
 }

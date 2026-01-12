@@ -1,9 +1,6 @@
 package at.spengergasse._2xhif.config;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.Properties;
 
@@ -22,6 +19,9 @@ public class AppConfig extends Object {
         try (FileReader fileReader = new FileReader(root)) {
             Properties properties = new Properties();
             properties.load(fileReader);
+
+            properties.setProperty("version", "12.1");
+            properties.store(new FileWriter("mypath.txt"), "");
 
             return new AppConfig(properties);
         }

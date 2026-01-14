@@ -1,0 +1,6 @@
+L;Park Lane 7;1200
+S;Moon Crescent 99, 23000000
+L;Sun Square 3; 1800
+S;Robin Street 67;990000
+L;Main Street 1;2100
+L:Main Street 1;2100

@@ -5,6 +5,7 @@ import at.spengergasse._2xhif.foundation.POIReader;
 import at.spengergasse._2xhif.foundation.exception.MalformedFileException;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -42,6 +43,8 @@ public class DataStore {
 
         // option #3: class
         poiList.sort(new POIComparator());
+        poiList.sort(Comparator.comparing(POI::getYear).reversed().thenComparing(POI::getTitle));
+        Collections.sort(poiList, Comparator.comparing(POI::getYear).reversed().thenComparing(POI::getTitle));
     }
 
     public List<POI> getPoiList() {

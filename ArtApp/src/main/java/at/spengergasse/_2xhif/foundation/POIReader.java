@@ -35,6 +35,10 @@ public class POIReader {
         this.reader = new BufferedReader(fileReader);
     }
 
+    public POIReader(String path) throws IOException {
+        this.reader = new BufferedReader(new FileReader(path));
+    }
+
     public List<POI> readAll() throws IOException, MalformedFileException {
         List<POI> allPois = new ArrayList<>();
 
@@ -88,6 +92,10 @@ public class POIReader {
      */
     private String readNext() throws IOException {
         final String line = reader.readLine();
+
+        if (line.isEmpty()) {
+            // ...
+        }
 
         if (line != null) {
             lineCount++;

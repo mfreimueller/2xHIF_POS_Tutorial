@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=BSTreeTest
+comment0.text=\n\ The\ test\ class\ BSTreeTest.\n\n\ @author\ \ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=BSTreeTest()
+comment1.text=\n\ Default\ constructor\ for\ test\ class\ BSTreeTest\n
+comment10.params=
+comment10.target=void\ ensure_that_leaf_nodes_are_returned_properly()
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\n\ Tears\ down\ the\ test\ fixture.\n\n\ Called\ after\ every\ test\ case\ method.\n
+comment4.params=
+comment4.target=void\ testAdd()
+comment5.params=
+comment5.target=void\ testToString()
+comment6.params=
+comment6.target=void\ testEquals()
+comment7.params=
+comment7.target=void\ testAddTree()
+comment8.params=
+comment8.target=void\ ensure_that_max_returns_correct_value()
+comment9.params=
+comment9.target=void\ ensure_that_max_throws_on_empty_tree()
+numComments=11

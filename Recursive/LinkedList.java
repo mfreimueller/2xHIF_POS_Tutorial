@@ -60,19 +60,22 @@ public class LinkedList<T>
         // ::toString for a linked list is rather straight forward:
         // simply go from the head to the right until there is no more node on the right
         // ... and write the data for each node
-        StringBuilder sb = new StringBuilder();
+//        StringBuilder sb = new StringBuilder();
+//
+//        LLNode<T> cur = head;
+//
+//        // this condition makes sure that we go to the right until the next node is null, which marks the end of our list
+//        while (cur != null) {
+//            sb.append(cur.getData());
+//
+//            // select the next node (which might be null - when? - whenever we've reached the end)
+//            cur = cur.getNext();
+//        }
         
-        LLNode<T> cur = head;
-        
-        // this condition makes sure that we go to the right until the next node is null, which marks the end of our list
-        while (cur != null) {
-            sb.append(cur.getData());
-            
-            // select the next node (which might be null - when? - whenever we've reached the end)
-            cur = cur.getNext();
-        }
-        
-        return sb.toString();
+//        return sb.toString();
+
+        // recursive solution:
+        return (head == null ? "" : head.toString());
     }
     public int count(T element)
     {

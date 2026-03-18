@@ -48,4 +48,9 @@ public class LLNode<T>
         
         return false;
     }
+
+    @Override
+    public String toString() {
+        return data + (next == null ? "" : next.toString());
+    }
 }
